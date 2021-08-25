@@ -12357,6 +12357,11 @@ fieldset:disabled .btn {
   background-size: cover;
 }
 
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .index__h1 {
   color: #00cc99;
   font-size: 20px;
@@ -12401,9 +12406,6 @@ p, ol, ul {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .plan-selection .card div {
-    width: 50%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -12416,11 +12418,6 @@ p, ol, ul {
   .plan-selection .card div {
     width: 100%;
   }
-}
-
-.object-fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .swiper-container {
