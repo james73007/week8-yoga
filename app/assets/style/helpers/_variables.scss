@@ -224,7 +224,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default; //false
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -343,7 +343,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem !default; //1.5rem
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -441,12 +441,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5 !default;   //40
+$h2-font-size:                $font-size-base * 2 !default;    //32
+$h3-font-size:                $font-size-base * 1.75 !default;  // 28 
+$h4-font-size:                $font-size-base * 1.5 !default;   //24
+$h5-font-size:                $font-size-base * 1.25 !default;   //20
+$h6-font-size:                $font-size-base !default;         //16
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes

@@ -19,6 +19,29 @@ $utilities: map-merge(
 .w-540{
   width: 540px;
 }
+.w-445{
+  width: 445px;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+.pb-40{
+  padding-bottom: 40px;
+}
+.pl-48{
+  padding-left: 48px;
+}
 .object-fit{
   object-fit: cover;
+}
+.h-243{
+  height: 243px;
+}
+.bg-img{
+  background-image: url(../../images/teacher-1.png);
+  height: 420px;
+  width: 100%;
+  background-position: center  center;
+  background-size: cover;
 }
