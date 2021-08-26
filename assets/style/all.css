@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12312,6 +12313,12 @@ fieldset:disabled .btn {
   }
 }
 
+.index__h1 {
+  color: #00cc99;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .w-350 {
   width: 350px;
 }
@@ -12349,6 +12356,22 @@ fieldset:disabled .btn {
   height: 243px;
 }
 
+.h-196 {
+  height: 196px;
+}
+
+.h-207 {
+  height: 207px;
+}
+
+.h-420 {
+  height: 420px;
+}
+
+.h-444 {
+  height: 444px;
+}
+
 .bg-img {
   background-image: url(../../images/teacher-1.png);
   height: 420px;
@@ -12362,10 +12385,9 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 img {
@@ -12420,6 +12442,10 @@ p, ol, ul {
   }
 }
 
+.h-341 {
+  height: 341px;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -12442,6 +12468,18 @@ p, ol, ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
 }
 
 /*# sourceMappingURL=all.css.map */
