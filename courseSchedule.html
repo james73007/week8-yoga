@@ -26,106 +26,180 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0  z-index-999">
       <div class="container">
         <a class="" href="index.html"><img src="./assets/images/DOYOGA-logo.png" alt="logo.png"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse    " id="navbarSupportedContent">
-        
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav d-flex  justify-content-md-center  flex-grow-1 ">
               <li class="nav-item">
-                <a class="nav-link "  href="course.html">課程介紹</a>
+                <a class="nav-link text-dark text-sm-center  text-md-center"  href="course.html">課程介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="yogaSpace.html">瑜珈空間</a>
+                <a class="nav-link text-dark  text-sm-center  text-md-center" href="yogaSpace.html">瑜珈空間</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="courseSchedule.html">當月課表</a>
+                <a class="nav-link text-dark  text-sm-center  text-md-center" href="courseSchedule.html">當月課表</a>
               </li>
             </ul>
-          <ul class=" d-flex flex-column flex-lg-row ">
-            <li><a href="reserve.html" class="btn rounded-pill border-danger">立即預約</a></li>
-            <li><a href="contact.html" class="btn rounded-pill border-danger">聯絡我們</a></li>
+          <ul class=" d-flex flex-column flex-md-row">
+            <li><a href="reserve.html" class="btn rounded-pill border-secondary text-secondary text-sm-center text-md-center me-3">立即預約</a></li>
+            <li><a href="contact.html" class="btn rounded-pill border-secondary text-secondary text-sm-center text-md-center">聯絡我們</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
 <!-- 固定在右側社群連結 -->
-    <div class=" position-fixed  end-0 me-4 d-lg-block  d-none d-md-none">
-      <ul >
-        <li class="bg-secondary" ><a href="#" ><i class="fab fa-facebook  fa-3x "></i></a></li>
-        <li class="bg-secondary"><a href="#" ><i class="fab fa-instagram  fa-3x"></i></a></li>
-        <li class="bg-secondary"><a href="#" ><i class="fab fa-line fa-3x"></i></a></li>
+      <ul class=" position-fixed  z-index end-0 me-4 d-lg-block  d-none d-md-none" >
+        <li  ><a href="#" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
+        <li ><a href="#" class="text-secondary"><i class="fab fa-instagram  fa-3x"></i></a></li>
+        <li ><a href="#" class="text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
-    </div>
-
 
     
 <section>
+    <h1 class="text-center">本月課表</h1>
     <div class="container">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">星期一</th>
-                <th scope="col">星期二</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class=" px-5 py-5">
+            <div class="table-responsive-md">
+              <table class="table text-secondary mb-4 ">
+                <h2 class="text-center">2021 07 月</h2>
+                  <thead>
+                    <tr>
+                      <th scope="col">時間</th>
+                      <th  scope="col">星期一</th>
+                      <th class="table-active" scope="col">星期二</th>
+                      <th scope="col">星期三</th>
+                      <th class="table-active" scope="col">星期四</th>
+                      <th scope="col">星期五</th>
+                      <th class="table-active" scope="col">星期六</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">0900-1000</th>
+                      <td>基礎 Basic</td>
+                      <td class="table-active">基礎 Basic</td>
+                      <td></td>
+                      <td class="table-active"></td>
+                      <td>基礎 Basic</td>
+                      <td class="table-active">基礎 Basic</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1000-1100</th>
+                      <td>艾揚格 Iyengar</td>
+                      <td class="table-active">哈達 Hatha</td>
+                      <td>寰宇 Universal</td>
+                      <td class="table-active">哈達 Hatha</td>
+                      <td>艾揚格 Iyengar</td>
+                      <td class="table-active">雙人飛行</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1100-1200</th>
+                      <td >寰宇 Universal</td>
+                      <td class="table-active">陰陽 Yin Yang</td>
+                      <td>艾揚格 Iyengar</td>
+                      <td class="table-active">寰宇 Universal</td>
+                      <td></td>
+                      <td class="table-active">艾揚格 Iyengar</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1200-1400</th>
+                      <td class="text-center" colspan="6">休息</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1400-1500</th>
+                      <td >雙人飛行</td>
+                      <td class="table-active">基礎 Basic</td>
+                      <td>雙人飛行</td>
+                      <td class="table-active">雙人飛行</td>
+                      <td>基礎 Basic</td>
+                      <td class="table-active">基礎 Basic</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1500-1600</th>
+                      <td >陰陽 Yin Yang</td>
+                      <td class="table-active">基礎 Basic</td>
+                      <td>基礎 Basic</td>
+                      <td class="table-active">哈達 Hatha</td>
+                      <td>香氛瑜珈</td>
+                      <td class="table-active" >香氛瑜珈</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1600-1700</th>
+                      <td >哈達 Hatha</td>
+                      <td class="table-active">雙人飛行</td>
+                      <td>陰陽 Yin Yang</td>
+                      <td class="table-active">香氛瑜珈</td>
+                      <td>艾揚格 Iyengar</td>
+                      <td class="table-active">陰陽 Yin Yang</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1700-1800</th>
+                      <td >艾揚格 Iyengar</td>
+                      <td class="table-active"></td>
+                      <td>哈達 Hatha</td>
+                      <td class="table-active">艾揚格 Iyengar</td>
+                      <td>寰宇 Universal</td>
+                      <td class="table-active">哈達 Hatha</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1800-2000</th>
+                      <td class="text-center" colspan="6">休息</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1800-2000</th>
+                      <td></td>
+                      <td class="table-active"></td>
+                      <td>香氛瑜珈</td>
+                      <td class="table-active">艾揚格 Iyengar</td>
+                      <td>香氛瑜珈</td>
+                      <td class="table-active">雙人飛行</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+          <div class="row justify-content-center">
+            <div class=" col-md-10 col-lg-8">
+              <h2 class="text-center mb-4">上課須知</h2>
+              <ul>
+                <li>
+                  <div class="d-flex align-items-center ">
+                    <span>1.</span>
+                    <div class="border border-danger rounded-pill px-3 py-3">空中瑜珈、香氛開放 2 天前電話預約上課。</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center justify-content-lg-end">
+                    <span>2.</span>
+                    <div class="bg-secondary text-white rounded-pill px-3 py-3">如果有特殊體質、特殊狀況，請主動告知該堂教師。</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <span>3.</span>
+                    <div class="border border-danger rounded-pill px-3 py-3">取消預約或時間異動請於預約日前一天晚間 21:00 前告知。</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center justify-content-lg-end">
+                    <span>4.</span>
+                    <div class="bg-secondary text-white rounded-pill px-3 py-3">空中瑜珈、香氛開放 2 天前電話預約上課。</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
     </div>
 </section>
 
@@ -139,8 +213,8 @@
     </div>
     <div class="col-md-6 col-lg-4">
       <div class="input-group  mb-3">
-        <input type="email" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
-        <button type="button" class="btn btn-secondary">訂閱</button>
+        <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
+        <button type="button" class="btn btn-light text-white">訂閱</button>
       </div>
     </div>
   </div>

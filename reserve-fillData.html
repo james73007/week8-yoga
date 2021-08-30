@@ -26,51 +26,47 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0  z-index-999">
       <div class="container">
         <a class="" href="index.html"><img src="./assets/images/DOYOGA-logo.png" alt="logo.png"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse    " id="navbarSupportedContent">
-        
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav d-flex  justify-content-md-center  flex-grow-1 ">
               <li class="nav-item">
-                <a class="nav-link "  href="course.html">課程介紹</a>
+                <a class="nav-link text-dark text-sm-center  text-md-center"  href="course.html">課程介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="yogaSpace.html">瑜珈空間</a>
+                <a class="nav-link text-dark  text-sm-center  text-md-center" href="yogaSpace.html">瑜珈空間</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="courseSchedule.html">當月課表</a>
+                <a class="nav-link text-dark  text-sm-center  text-md-center" href="courseSchedule.html">當月課表</a>
               </li>
             </ul>
-          <ul class=" d-flex flex-column flex-lg-row ">
-            <li><a href="reserve.html" class="btn rounded-pill border-danger">立即預約</a></li>
-            <li><a href="contact.html" class="btn rounded-pill border-danger">聯絡我們</a></li>
+          <ul class=" d-flex flex-column flex-md-row">
+            <li><a href="reserve.html" class="btn rounded-pill border-secondary text-secondary text-sm-center text-md-center me-3">立即預約</a></li>
+            <li><a href="contact.html" class="btn rounded-pill border-secondary text-secondary text-sm-center text-md-center">聯絡我們</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
 <!-- 固定在右側社群連結 -->
-    <div class=" position-fixed  end-0 me-4 d-lg-block  d-none d-md-none">
-      <ul >
-        <li class="bg-secondary" ><a href="#" ><i class="fab fa-facebook  fa-3x "></i></a></li>
-        <li class="bg-secondary"><a href="#" ><i class="fab fa-instagram  fa-3x"></i></a></li>
-        <li class="bg-secondary"><a href="#" ><i class="fab fa-line fa-3x"></i></a></li>
+      <ul class=" position-fixed  z-index end-0 me-4 d-lg-block  d-none d-md-none" >
+        <li  ><a href="#" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
+        <li ><a href="#" class="text-secondary"><i class="fab fa-instagram  fa-3x"></i></a></li>
+        <li ><a href="#" class="text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
-    </div>
-
 
     
 <section>
     <div class="container py-4">
-        <h3 class="text-center mb-3">立即預約</h3>
+        <h3 class="text-secondary text-center mb-3">立即預約</h3>
         <div class=" d-flex justify-content-center  mb-4">
             <a class="rounded-pill btn btn-primary ">選擇方案</a> 
-            <a href="reserve-fillData.html" class="rounded-pill btn btn-primary ">填寫資料</a>   
+            <a href="reserve-fillData.html" class="rounded-pill btn btn-secondary text-white ">填寫資料</a>   
             <a href="finish-reserve.html" class="rounded-pill btn btn-primary ">完成預約</a>
             
         </div>
@@ -79,75 +75,75 @@
                 <form action="">
                     <ul>
                         <li class="mb-4">
-                            <h6 for="">1. 是否接觸過瑜珈?</h6>
-                            <label for="yes">是</label>
-                            <input type="radio" name="haveDoYoga" id="yes" checked>
-                            <label for="no">否</label>
+                            <h6 class="text-dark" for="">1. 是否接觸過瑜珈?</h6>
+                            <label class="text-dark"  for="yes">是</label>
+                            <input type="radio" name="haveDoYoga" class="border-light" id="yes" checked>
+                            <label class="text-dark" for="no">否</label>
                             <input type="radio" name="haveDoYoga" id="no">
                         </li>
                         <li class="mb-4">
-                            <p for="">2. 想改善的生活問題?</p>
+                            <p class="text-dark" for="">2. 想改善的生活問題?</p>
                             <input type="checkbox" name="" id="noMuscle">
-                            <label for="noMuscle">肌耐力不足</label>
+                            <labe class="text-dark" for="noMuscle">肌耐力不足</label>
                             <input type="checkbox" name="" id="poorSoftness">
-                            <label for="poorSoftness">柔軟度不佳</label>
+                            <labe class="text-dark" for="poorSoftness">柔軟度不佳</label>
                             <input type="checkbox" name="" id="Stressed">
-                            <label for="Stressed">壓力大</label>
+                            <labe class="text-dark" for="Stressed">壓力大</label>
                             <br>
                             <input type="checkbox" name="" id="incorrectPosture">
-                            <label for="incorrectPosture">姿勢不正</label>
+                            <labe class="text-dark" for="incorrectPosture">姿勢不正</label>
                             <input type="checkbox" name="" id="poorSleepQuality">
-                            <label for="poorSleepQuality">睡眠品質差</label>
+                            <labe class="text-dark" for="poorSleepQuality">睡眠品質差</label>
                             <input type="checkbox" name="" id="lackOfAttention">
-                            <label for="lackOfAttention">注意力不足</label>
+                            <labe class="text-dark" for="lackOfAttention">注意力不足</label>
                         </li>
                         <li class="mb-4">
-                            <p for="">3. 每週累積運動量約為多少？</p>
+                            <p class="text-dark" for="">3. 每週累積運動量約為多少？</p>
                             <input type="radio" name="weekExercise" id="over150min">
-                            <label for="over150min">150 分鐘以上</label>
+                            <labe class="text-dark" for="over150min">150 分鐘以上</label>
                             <input type="radio" name="weekExercise" id="between75-150">
-                            <label for="between75-150">75~150 分鐘</label>
+                            <labe class="text-dark" for="between75-150">75~150 分鐘</label>
                             <br>
                             <input type="radio" name="weekExercise" id="between30-75">
-                            <label for="between30-75">30~75 分鐘</label>
+                            <labe class="text-dark" for="between30-75">30~75 分鐘</label>
                             <input type="radio" name="weekExercise" id="under30min">
-                            <label for="under30min">30 分鐘以下</label>
+                            <labe class="text-dark" for="under30min">30 分鐘以下</label>
                         </li>
                         <li class="mb-4">
-                            <label for="">4. 上課預約報到日</label>
-                            <p>若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+                            <label class="text-dark"for="">4. 上課預約報到日</label>
+                            <p class="text-dark">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
                             <input type="text" name="datepicker" id="" placeholder="MM/DD/YYYY">
                         </li>
                         <li class="mb-4">
-                            <p for="">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                            <p class="text-dark" for="">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
                             <div class="d-flex">
                                     <div>
-                                        <label class="d-block" for="name">姓名</label>
-                                        <input type="text" name="name" id="name" placeholder="請輸入您的姓名">
+                                        <label class="d-block text-light" for="name">姓名</label>
+                                        <input type="text" name="name" id="name"  class="text-light" placeholder="請輸入您的姓名">
         
                                     </div>
                                     <div>
-                                        <label class="d-block" for="age">年齡</label>
-                                        <input type="text" name="age" id="age" placeholder="請輸入您的年齡">
+                                        <label class="d-block text-light" for="age">年齡</label>
+                                        <input type="text" name="age" id="age" class="text-light"  placeholder="請輸入您的年齡">
                                     </div>
             
                             </div>
                             <div class="form-group">
-                                <label  class="d-block" for="gender">性別</label>
+                                <label  class="d-block text-secondary" for="gender">性別</label>
                                 <select name="" id="gender">
                                     <option value="女" checked>女</option>
                                     <option value="男">男</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="d-block" for="mail">電子信箱</label>
-                                <input type="email" name="mail" id="mail" placeholder="email@example.com">
+                                <label class="d-block text-secondary" for="mail">電子信箱</label>
+                                <input type="email" name="mail" id="mail" class="text-light" placeholder="email@example.com">
                             </div>
                             <div>
-                                <label class="d-block" for="phone">手機號碼</label>
-                                <input type="tel" name="phone" id="phone" placeholder="0912-345-678">
+                                <label class="d-block text-secondary" for="phone">手機號碼</label>
+                                <input type="tel" name="phone" id="phone" class="text-light" placeholder="0912-345-678">
                             </div>
-                            <input type="submit" value="送出">
+                            <input type="submit" class=" btn btn-light border-light text-white w-100" value="送出">
                         </li>
                     </ul>
                 </form>
@@ -166,8 +162,8 @@
     </div>
     <div class="col-md-6 col-lg-4">
       <div class="input-group  mb-3">
-        <input type="email" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
-        <button type="button" class="btn btn-secondary">訂閱</button>
+        <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
+        <button type="button" class="btn btn-light text-white">訂閱</button>
       </div>
     </div>
   </div>
