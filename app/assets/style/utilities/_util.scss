@@ -9,7 +9,9 @@ $utilities: map-merge(
   )
 
 );
-
+.bg-attachment-flixed{
+  background-attachment: fixed;
+}
 .w-350{
   width: 350px;
 }
@@ -23,25 +25,84 @@ $utilities: map-merge(
   width: 445px;
 }
 
-.pt-40{
-  padding-top: 40px;
-}
-.pb-40{
-  padding-bottom: 40px;
-}
-.pl-48{
-  padding-left: 48px;
-}
-.object-fit{
-  object-fit: cover;
-}
+
+
 .h-243{
   height: 243px;
+}
+.h-196{
+  height: 196px;
+}
+.h-207{
+  height: 207px;
+}
+.h-420{
+  height: 420px;
+}
+.h-444{
+  height: 444px;
 }
 .bg-img{
   background-image: url(../../images/teacher-1.png);
   height: 420px;
   width: 100%;
-  background-position: center  center;
+  background-position: center bottom;
   background-size: cover;
 }
+.rounded-pill{
+  border-radius: 16px;
+}
+.rounded{
+  border-radius: 16px;
+}
+.z-index{
+  z-index: 3;
+}
+.z-index-999{
+  z-index: 999;
+}
+.courseRecomImg{
+      height: 196px;
+  @include media-breakpoint-up(md) { 
+      height: 161px;
+  }
+  @include media-breakpoint-up(lg) { 
+      height: 196px;
+  }
+}
+.courseRecomImg-width{
+  width: 255px;
+@include media-breakpoint-up(md) { 
+  width: 210px;
+}
+@include media-breakpoint-up(lg) { 
+  width: 255px;
+}
+}
+
+
+.searchWidth{
+  width: 231px;
+  @include media-breakpoint-up(md) { 
+    width: 270px;
+  }
+  @include media-breakpoint-up(lg) { 
+    width: 350px;
+  }
+}
+.courseImgWidth{
+    width: 345px;
+  @include media-breakpoint-up(md) { 
+    width: 330px;
+  }
+  @include media-breakpoint-up(lg) { 
+    width: 540px;
+  }
+}
+.courseImgHeight{
+  height: 218px;
+@include media-breakpoint-up(md) { 
+  height: 341px;
+}
+}
+

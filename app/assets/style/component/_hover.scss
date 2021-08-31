@@ -1,0 +1,27 @@
+.btnHoverSecondary{
+    &:hover{
+        background:#907A7B !important;
+        color:white !important;
+    }
+}
+
+.btnHoverLight{
+    &:hover{
+        background: #C0A4A5 !important;
+        color: #fff !important;
+    }
+}
+.card{
+    img{
+        &:hover{
+            transform: scale(1.1,1.1);
+            transition: all .3s;
+        }
+    }
+   
+}
+.txtHoverLight{
+    &:hover{
+        color: #C0A4A5 !important;
+    }
+}

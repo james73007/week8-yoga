@@ -85,8 +85,8 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "light":     #C0A4A5,
+  "dark":       #707070
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -250,11 +250,19 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * .25,   //4
+  2: $spacer * .5,    //8
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * 1.5,   //24
+  5: $spacer * 2,    //32
+  6: $spacer * 2.5,    //40
+  7: $spacer * 3,    //48
+  8: $spacer * 3.5,    //56
+  9: $spacer * 4,    //64
+
+
+
+
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -403,9 +411,9 @@ $transition-collapse:         height .35s ease !default;
 // scss-docs-start aspect-ratios
 $aspect-ratios: (
   "1x1": 100%,
-  "4x3": calc(3 / 4 * 100%),
-  "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "4x3": calc(3 / 4 * 100%),  //default
+  "16x9": calc(9 / 16 * 100%),  //default
+  "21x9": calc(9 / 21 * 100%),  //default
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -419,7 +427,7 @@ $aspect-ratios: (
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
+$font-family-base:           'Noto Sans TC'  !default; // var(--#{$variable-prefix}font-sans-serif)
 $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
@@ -1257,10 +1265,11 @@ $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-sm:                          300px !default;
-$modal-md:                          500px !default;
-$modal-lg:                          800px !default;
-$modal-xl:                          1140px !default;
+//modal 寬度
+$modal-sm:                          345px !default;  //300px
+$modal-md:                          690px !default;   //500px
+$modal-lg:                          920px !default;  //800px 
+$modal-xl:                          1140px !default;  
 
 $modal-fade-transform:              translate(0, -50px) !default;
 $modal-show-transform:              none !default;

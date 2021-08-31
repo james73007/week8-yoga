@@ -2,27 +2,22 @@
     background-image: url(../images/photo-1612157777902-5382bc6e864b.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 560px;
+    background-position: center bottom;
+    height: 582px;
   }
   @media(min-width:768px){
     .banner{
       height: 582px;
     }
   }
-
   @include media-breakpoint-up(md) {
 
     .plan-selection{
       .card{
         flex-direction: row;
-        div{
-          width: 50%;
-        }
       }
     }
   }
-  
   @include media-breakpoint-up(lg) {
 
     .plan-selection{
@@ -35,6 +30,28 @@
     }
   }
 
-  .object-fit-cover{
-    object-fit: cover;
+  .h-341{
+    height: 341px;
+  }
+  .logo-img-white{
+    background-image: url(../images/DOYOGA-footer.png);
+    width: 96px;
+    height: 31px;
+    text-indent: 101%;
+    overflow:hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .logo{
+    background-image: url(../images/DOYOGA-logo.png);
+    width: 96px;
+    height: 31px;
+    text-indent: 101%;
+    overflow:hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
