@@ -1,23 +1,10 @@
 "use strict";
 
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   autoplay:{
-//     delay:3500,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     992:{
-//       slidesPerView: 4,
-//       spaceBetween: 30
-//     }
-//   }
-// });
-//datepicker日期套件
+AOS.init({
+  offset: 50,
+  once: true
+}); //datepicker日期套件
+
 var elem = document.querySelector('input[name="datepicker"]');
 var datepicker = new Datepicker(elem, {
   buttonClass: 'btn primary',
@@ -30,26 +17,42 @@ var datepicker = new Datepicker(elem, {
 
 }); //首頁 聽聽他們怎麼說 swiper
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  }
-}); //瑜珈空間 swiper
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   autoplay:{
-//     delay:3500,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//     },
-//     992:{
-//       slidesPerView: 4,
-//     }
-//   }
-// });
+var userRecommendSwiper = document.querySelector('.js-swiper-user-recommend');
+
+if (userRecommendSwiper) {
+  var swiper = new Swiper('.js-swiper-user-recommend', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    grid: {
+      rows: 3,
+      fill: 'column'
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+          fill: 'row'
+        },
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+          fill: 'row'
+        },
+        spaceBetween: 30
+      }
+    }
+  });
+}
 //# sourceMappingURL=all.js.map

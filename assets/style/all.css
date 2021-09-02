@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url(../../../node_modules/aos/dist/aos.css);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -9336,7 +9337,7 @@ fieldset:disabled .btn {
 }
 
 .rounded-pill {
-  border-radius: 50rem !important;
+  border-radius: 16px !important;
 }
 
 .rounded-top {
@@ -14567,6 +14568,22 @@ p, ol, ul {
   width: 445px;
 }
 
+.h-210 {
+  height: 210px;
+}
+
+@media (min-width: 768px) {
+  .h-210 {
+    height: 266px;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-210 {
+    height: 444px;
+  }
+}
+
 .h-243 {
   height: 243px;
 }
@@ -14583,7 +14600,11 @@ p, ol, ul {
   height: 420px;
 }
 
-.h-444 {
+.h-md-266 {
+  height: 266px;
+}
+
+.h-lg-444 {
   height: 444px;
 }
 
@@ -14593,14 +14614,6 @@ p, ol, ul {
   width: 100%;
   background-position: center bottom;
   background-size: cover;
-}
-
-.rounded-pill {
-  border-radius: 16px;
-}
-
-.rounded {
-  border-radius: 16px;
 }
 
 .z-index {
@@ -14685,22 +14698,31 @@ p, ol, ul {
   }
 }
 
-.swiper-container {
+.ms-md-negative-s {
+  margin-left: -60px;
+}
+
+.ms-lg-negative-l {
+  margin-left: -95px;
+}
+
+.swiper-user-recommend {
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
-  font-size: 18px;
+  width: 350px;
+  height: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .swiper-slide img {
