@@ -9,17 +9,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'fuz6rfk',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
     <link rel="stylesheet" href="./assets/style/all.css">
 
   </head>
@@ -58,7 +49,6 @@
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-instagram  fa-3x"></i></a></li>
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
-
     <section>
     <div class="banner bg-attachment-flixed ">
         <div class="container h-100">
@@ -81,7 +71,7 @@
         <h5 class="text-center text-light mb-4 mb-lg-5">DOYOGA 可以帶給你...</h5>
         <div class="row"> 
             <div class="col-md-4 col-lg-4">
-                <div class="card bg-dark text-white ratio ratio-1x1   mb-3 mb-md-0 " data-aos="fade-down">              
+                <div class="card bg-dark text-white ratio ratio-1x1   mb-3 mb-md-0 "data-aos="flip-left" >              
                     <img class=" card-img rounded-pill " src="./assets/images/photo-1593810450967-f9c42742e326.jpeg" alt="整體健身圖片">
                     <div class="card-img-overlay d-flex flex-column justify-content-end  px-4 py-4 px-md-3 py-md-3">
                         <h5 class="card-title mb-1">整體健身</h5>
@@ -90,7 +80,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
-                <div class="card bg-dark text-white ratio ratio-1x1  mb-3 mb-md-0" data-aos="fade-down">
+                <div class="card bg-dark text-white ratio ratio-1x1  mb-3 mb-md-0" data-aos="flip-left" data-aos-duration="6000" >
                     <img  class="rounded-pill" src="./assets/images/photo-1593810451137-5dc55105dace.jpeg" alt="減壓放鬆圖片">
                     <div class="card-img-overlay d-flex flex-column justify-content-end px-4 py-4 px-md-3 py-md-3" >
                         <h5 class="card-title  mb-1">減壓放鬆</h5>
@@ -99,7 +89,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
-                <div class="card bg-dark text-white ratio ratio-1x1  mb-3 mb-md-0" data-aos="fade-down">
+                <div class="card bg-dark text-white ratio ratio-1x1  mb-3 mb-md-0"data-aos="flip-left"  data-aos-duration="9000" >
                     <img class="rounded-pill" src="./assets/images/photo-1599901860904-17e6ed7083a0.jpeg" alt="局部雕塑圖片">
                     <div class="card-img-overlay d-flex flex-column justify-content-end px-4 py-4 px-md-3 py-md-3">
                         <h5 class="card-title mb-1">局部雕塑</h5>
@@ -114,13 +104,13 @@
     <section class="bg-primary pt-5 pb-7 py-lg-9">
         <div class="container">
             <div class="row justify-content-md-end ">
-                <div class="col-lg-6 d-none d-md-none d-lg-block ">
+                <div class="col-lg-6 d-none d-md-none d-lg-block " data-aos="fade-right">
                     <img class="h-628 w-100" src="./assets/images/photo-1540206276207-3af25c08abc4.jpeg" alt="">
                 </div>
                 <div class="col-md-11 col-lg-6">
                     <h2 class="text-secondary text-center text-lg-start mb-1">頂尖師資、專業教學</h2>
                     <p class="text-light mb-4">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
-                    <div class="card rounded-pill  mb-3 px-3  py-3 py-md-6 ps-md-7 ms-0 ms-md-negative-s ms-lg-negative-l " >
+                    <div class="card rounded-pill  mb-3 px-3  py-3 py-md-6 ps-md-7 ms-0 ms-md-negative-s ms-lg-negative-l " data-aos="fade-left" >
                         <div class="d-flex align-items-center">
                           <div class="">
                             <img src="./assets/images/teacher-1.png" class="img-fluid rounded-start" alt="...">
@@ -135,7 +125,7 @@
                         </div>
                       </div>
 
-                      <div class="card  rounded-pill mb-3 px-3  py-3 py-md-4 ps-md-5" >
+                      <div class="card  rounded-pill mb-3 px-3  py-3 py-md-4 ps-md-5"data-aos="fade-left" >
                         <div class="d-flex align-items-center">
                           <div class="">
                             <img src="./assets/images/teacher-2.png" class="img-fluid rounded-start" alt="...">
@@ -148,7 +138,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card  rounded-pill mb-3 px-3 py-3 py-md-4 ps-md-5" >
+                      <div class="card  rounded-pill mb-3 px-3 py-3 py-md-4 ps-md-5" data-aos="fade-left">
                         <div class="d-flex align-items-center">
                           <div class="">
                             <img src="./assets/images/teacher-3.png" class="img-fluid rounded-start" alt="...">
@@ -177,20 +167,20 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-6 col-md-8">
-                              <div class="ratio ratio-11x14 ratio-md-7x9">
-                                <img class="  rounded-pill" src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" alt="">
+                              <div class="ratio ratio-11x14 ratio-md-7x9" >
+                                <img data-aos="fade-up-right" class="  rounded-pill" src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" alt="">
                               </div>
                     </div>
                     <div class="col-6 col-md-4">
                         <div class="row">
                             <div class="col-12 mb-0 mb-md-5  mb-lg-5">
                                 <div class="ratio ratio-11x14">
-                                    <img class="rounded-pill" src="./assets/images/white round table near brown wooden chair.jpg" alt="">
+                                    <img data-aos="fade-up-left" class="rounded-pill" src="./assets/images/white round table near brown wooden chair.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-12 mb-0  mb-md-5  d-none d-md-block">
                                 <div class="ratio ratio-11x14 ">
-                                    <img class=" w-100   rounded-pill" src="./assets/images/woman in black sports bra and blue denim jeans doing yoga.jpg" alt="">
+                                    <img data-aos="fade-up-left" class=" w-100   rounded-pill" src="./assets/images/woman in black sports bra and blue denim jeans doing yoga.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -278,7 +268,7 @@
     <p class="text-light text-center mb-4 mb-lg-5">DOYOGA 可以帶給你...</p>
     <div class="row">
         <div class="col-lg-4">
-            <div class="card  rounded-pill" >
+            <div class="card  rounded-pill"  data-aos="zoom-in-up">
                 <img  src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img-top  h-243  " alt="首次體驗.jpg">
                 <div class="card-body px-4 py-4">
                     <h5 class="card-title text-secondary text-center text-md-start text-lg-center text-secondary mb-1">首次體驗</h5>
@@ -289,7 +279,7 @@
             </div>
         </div>
         <div class="col-lg-4">
-            <div class="card  rounded-pill" >
+            <div class="card  rounded-pill" data-aos="zoom-in-up" >
                 <img  src="./assets/images/woman performing yoga.jpg" class="card-img-top  h-243  " alt="短期體驗.jpg">
                 <div class="card-body px-4 py-4">
                     <h5 class="card-title text-secondary text-center text-md-start text-lg-center text-secondary mb-1">短期體驗</h5>
@@ -300,7 +290,7 @@
             </div>
         </div>
         <div class="col-lg-4">
-            <div  class="card  rounded-pill" >
+            <div  class="card  rounded-pill" data-aos="zoom-in-up" >
                 <img src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg" class="card-img-top h-243 " alt="...">
                 <div class="card-body px-4 py-4">
                     <h5 class="card-title text-secondary text-center text-md-start text-lg-center text-secondary mb-1">長期體驗</h5>
@@ -319,193 +309,123 @@
 <section class="bg-primary pt-5 pb-8 pt-md-6 pb-md-9">
     <div class="container">
         <h2 class="text-center text-secondary mb-5">聽聽他們怎麼說</h2>
-        <div class="h-x4.18 h-md-x2.67">
-            <div class="swiper js-swiper-user-recommend swiper-user-recommend">
-              <ul class="swiper-wrapper">
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 ">
-                      <img src="./assets/images/user-2.png" alt="使用者照片">
+        <div class="swiper commentSwiper">
+            <ul class="swiper-wrapper">
+                <li class=" swiper-slide rounded-pill">
+                    <div class="d-flex align-items-center bg-white ps-3 py-4 ">
+                        <div class="aimg">
+                            <img src="./assets/images/user-1.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          Joanne
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="material-icons material-icons-outlined">
-                          star
-                        </i>
-                        <i class="material-icons material-icons-outlined">
-                          star
-                        </i>
-                        <i class="material-icons material-icons-outlined">
-                          star
-                        </i>
-                        <i class="material-icons material-icons-outlined">
-                          star
-                        </i>
-                        <i class="material-icons material-icons-outlined">
-                          star
-                        </i>
-                      </li>
-                      <li>
-                        服務很好、設備優良！
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-    
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 w-x0.68">
-                      <img src="./assets/images/user-3.png" alt="使用者照片">
+                <li class=" card flex-row swiper-slide rounded-pill">
+                    <div class="d-flex align-items-center bg-white ps-3 py-4">
+                        <div class="aimg">
+                            <img src="./assets/images/user-2.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          穎旻
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        上課後身體健康很多
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-    
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 w-x0.68">
-                      <img
-                        src="./assets/images/user-4.png"
-                        alt="使用者照片"
-                      >
+                <li class="swiper-slide">
+                    <div class="card flex-row  d-flex align-items-center bg-white">
+                        <div class="aimg">
+                            <img src="./assets/images/user-3.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          子琪
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        上課很有趣！
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-    
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 w-x0.68">
-                      <img
-                        src="./assets/images/user-5.png"
-                        alt="使用者照片"
-                      >
+                <li class="swiper-slide">
+                    <div class="d-flex align-items-center bg-white">
+                        <div class="aimg">
+                            <img src="./assets/images/user-4.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          葉子
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        老師的教學很專業
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-    
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 w-x0.68">
-                      <img
-                        src="./assets/images/uset-6.png"alt="使用者照片" >
+                <li class="swiper-slide">
+                    <div class="d-flex align-items-center bg-white">
+                        <div class="aimg">
+                            <img src="./assets/images/user-5.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          Ray
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        很舒壓
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-    
-                <li
-                  class="swiper-slide card text-secondary px-2 py-1.75 mb-1 mb-md-2 mt-md-0">
-                  <div class="d-flex align-items-center">
-                    <div class="ratio ratio-1x1 w-x0.68">
-                      <img src="./assets/images/user-1.png"alt="使用者照片">
+                <li class="swiper-slide">
+                    <div class="d-flex align-items-center bg-white">
+                        <div class="aimg">
+                            <img src="./assets/images/user-6.png" alt="使用者圖片">
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" text-secondary">Joanne<span>Oct 17 2020</span></h4>
+                            <ul class="d-flex text-light">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                            <p class=" text-secondary">服務很好、設備優良！</p>
+                        </div>
                     </div>
-                    <ul class="ms-2 ms-md-2.5">
-                      <li class="mb-1">
-                        <p>
-                          俊儀
-                          <span class="fs-8 ms-1">Oct 17 2020</span>
-                        </p>
-                      </li>
-                      <li class="mb-1 text-primary-light">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        讚的！
-                      </li>
-                    </ul>
-                  </div>
                 </li>
-              </ul>
-            </div>
-          </div>
+            </ul>
+            
+        </div>
         </div>
     </div>
 </section>
+
 
 
 
@@ -557,8 +477,12 @@
         </div>
       </div>
     </footer>
+    <!-- swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

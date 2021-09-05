@@ -1,8 +1,12 @@
 "use strict";
 
 AOS.init({
-  offset: 50,
-  once: true
+  delay: 0,
+  // values from 0 to 3000, with step 50ms
+  duration: 1200,
+  // values from 0 to 3000, with step 50ms
+  once: false // whether animation should happen only once - while scrolling down
+
 }); //datepicker日期套件
 
 var elem = document.querySelector('input[name="datepicker"]');
@@ -17,41 +21,34 @@ var datepicker = new Datepicker(elem, {
 
 }); //首頁 聽聽他們怎麼說 swiper
 
-var userRecommendSwiper = document.querySelector('.js-swiper-user-recommend');
+var commentSwiper = document.querySelector('.commentSwiper');
 
-if (userRecommendSwiper) {
-  var swiper = new Swiper('.js-swiper-user-recommend', {
+if (commentSwiper) {
+  var swiper = new Swiper(".commentSwiper", {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500
+    },
     grid: {
       rows: 3,
-      fill: 'column'
-    },
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      fill: 'row'
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
+        slidesPerView: 2.2,
         grid: {
-          rows: 2,
-          fill: 'row'
-        },
-        spaceBetween: 30
+          rows: 2
+        }
       },
       992: {
         slidesPerView: 3,
-        grid: {
-          rows: 2,
-          fill: 'row'
-        },
-        spaceBetween: 30
+        rows: 2
       }
+    },
+    navigation: {
+      prevEl: ".swiper-prev",
+      nextEl: ".swiper-next"
     }
   });
 }
