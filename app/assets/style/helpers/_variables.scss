@@ -222,7 +222,7 @@ $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
 $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false !default;  //true  // 取消響應式文字
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     true !default; //false
 $enable-deprecation-messages: true !default;
@@ -382,7 +382,7 @@ $border-color:                $gray-300 !default;
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius-pill:          16px !default;  //50rem
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -411,8 +411,12 @@ $transition-collapse:         height .35s ease !default;
 // scss-docs-start aspect-ratios
 $aspect-ratios: (
   "1x1": 100%,
+  "3x4":calc( 4/ 3 * 100%),  
   "4x3": calc(3 / 4 * 100%),  //default
+  "7x9": calc(9 / 7 * 100%),  //default
+  "11x14": calc(14 / 11 * 100%),
   "16x9": calc(9 / 16 * 100%),  //default
+  "16x21": calc(21 / 16 * 100%), 
   "21x9": calc(9 / 21 * 100%),  //default
 ) !default;
 // scss-docs-end aspect-ratios
@@ -460,7 +464,7 @@ $h6-font-size:                $font-size-base !default;         //16
 // scss-docs-start font-sizes
 $font-sizes: (
   1: $h1-font-size,
-  2: $h2-font-size,
+  2: $h2-font-size *2,
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
@@ -599,9 +603,9 @@ $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:         .25rem !default;
 $input-btn-focus-color-opacity: .25 !default;
-$input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
+$input-btn-focus-color:         none!default; // rgba($component-active-bg, $input-btn-focus-color-opacity)  
 $input-btn-focus-blur:          0 !default;
-$input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow:    none !default; //  0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color 
 
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
@@ -638,11 +642,11 @@ $btn-font-size-lg:            $input-btn-font-size-lg !default;
 $btn-border-width:            $input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
-$btn-focus-width:             $input-btn-focus-width !default;
-$btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+$btn-box-shadow:               none!default; //inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075)
+$btn-focus-width:              none  !default; //$input-btn-focus-width
+$btn-focus-box-shadow:        none !default; //
 $btn-disabled-opacity:        .65 !default;
-$btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+$btn-active-box-shadow:        none  !default;  //inset 0 3px 5px rgba($black, .125)  
 
 $btn-link-color:              $link-color !default;
 $btn-link-hover-color:        $link-hover-color !default;
@@ -704,7 +708,7 @@ $input-bg:                              $white !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $body-color !default;
+$input-color:                            red !default; //
 $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
@@ -967,7 +971,7 @@ $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
-$navbar-toggler-focus-width:        $btn-focus-width !default;
+$navbar-toggler-focus-width:        0px !default; //$btn-focus-width   //解除預設點擊漢堡選單時會出現的外框線
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 // scss-docs-end navbar-variables
 

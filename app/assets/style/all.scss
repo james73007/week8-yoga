@@ -1,22 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap');
-
 @import "../../../node_modules/bootstrap/scss/functions";
+@import"../../../node_modules/bootstrap/scss/mixins";
 // @import "../../../node_modules/bootstrap/scss/utilities";
+// @import"../../../node_modules/bootstrap/scss/utilities/api";
 @import "./helpers/variables";
-
-@import"./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './layout/index.scss';
-
-
-
-@import 'base';
 @import"index";
+//util
+@import './utilities/base';
 @import"./utilities/util";
-@import"swiper";
 //component
+@import"./component/swiper";
 @import"./component/datapicker";
 @import"./component/hover";
 

@@ -11,15 +11,6 @@
         color: #fff !important;
     }
 }
-.card{
-    img{
-        &:hover{
-            transform: scale(1.1,1.1);
-            transition: all .3s;
-        }
-    }
-   
-}
 .txtHoverLight{
     &:hover{
         color: #C0A4A5 !important;

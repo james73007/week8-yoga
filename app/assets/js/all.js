@@ -1,20 +1,8 @@
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   autoplay:{
-//     delay:3500,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     992:{
-//       slidesPerView: 4,
-//       spaceBetween: 30
-//     }
-//   }
-// });
+AOS.init({
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1200, // values from 0 to 3000, with step 50ms
+  once: false, // whether animation should happen only once - while scrolling down
+});
 
 
 //datepicker日期套件
@@ -31,30 +19,34 @@ const datepicker = new Datepicker(elem, {
 
 //首頁 聽聽他們怎麼說 swiper
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+const commentSwiper = document.querySelector('.commentSwiper');
+if (commentSwiper) {
+  const swiper = new Swiper(".commentSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+    },
+    grid: {
+      rows: 3,    
+      fill: 'row',
+    },
+    breakpoints: {
+      768:{
+        slidesPerView: 2.2,
+        grid: {
+          rows: 2, 
+        },
+      },
+      992:{
+        slidesPerView: 3,
+        rows: 2, 
+      },
+    },
+    navigation: {
+      prevEl: ".swiper-prev",
+      nextEl: ".swiper-next",
+    },
+  });
+}
 
-//瑜珈空間 swiper
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
- 
-//   autoplay:{
-//     delay:3500,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-      
-//     },
-//     992:{
-//       slidesPerView: 4,
-      
-//     }
-//   }
-// });
