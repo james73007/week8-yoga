@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>完成預約頁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
-
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0  z-index-999">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0 w-100 py-4 z-index-999">
       <div class="container">
         <a class="logo d-block text-secondary" href="index.html"></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex  justify-content-md-center  flex-grow-1 ">
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark text-sm-center  text-md-center me-lg-5 "  href="course.html">課程介紹</a>
+            <ul class="navbar-nav d-flex justify-content-md-center flex-grow-1 ">
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark  me-lg-5"  href="course.html">課程介紹</a>
               </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark  text-sm-center  text-md-center me-lg-5" href="yogaSpace.html">瑜珈空間</a>
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark   me-lg-5" href="yogaSpace.html">瑜珈空間</a>
               </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark  text-sm-center  text-md-center" href="courseSchedule.html">當月課表</a>
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark  " href="courseSchedule.html">當月課表</a>
               </li>
             </ul>
           <ul class=" d-flex  flex-md-row justify-content-center">
@@ -45,74 +47,81 @@
 
 <!-- 固定在右側社群連結 -->
       <ul class=" position-fixed  z-index top-50 end-0 me-3 d-lg-block  d-none d-md-none" >
-        <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
+        <li class="mb-2"><a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-instagram  fa-3x"></i></a></li>
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
     <div class="container py-5">
   <h3 class="text-secondary text-center mb-3">立即預約</h3>
-  <div class=" d-flex justify-content-center  mb-4">
-      <a class="rounded-pill btn btn-primary  text-secondary">選擇方案</a> 
-      <a href="reserve-fillData.html" class="rounded-pill btn btn-primary text-secondary ">填寫資料</a>   
-      <a href="finish-reserve.html" class="rounded-pill btn btn-secondary text-white ">完成預約</a>
-      
+  <div class="row  justify-content-center  mb-4">
+    <div class="col-2 col-md-2">
+        <div class="rounded-pill bg-primary text-center text-secondary px-3 px-lg-7 py-lg-2">選擇方案</div> 
+    </div>
+    <div class="col-2 col-md-2">
+        <div class="rounded-pill  bg-primary text-center text-secondary px-3 px-lg-7 py-lg-2">填寫資料</div>   
+    </div>
+    <div class="col-2 col-md-2">
+        <div  class="rounded-pill  bg-secondary text-center text-white px-3 px-lg-7 py-lg-2">完成預約</div>
+    </div>
   </div>
   <div class="row justify-content-md-center">
-    <div class="col-md-6 col-lg-4">
-      <p class="text-center">
-        <i class="far fa-check-circle fa-3x"></i>
+    <div class="col-md-6 col-lg-4 mb-5">
+      <p class="text-center mb-3">
+        <i class="far fa-check-circle fa-3x text-secondary"></i>
       </p>
       <p class="text-secondary text-center mb-3">已完成預約，以下是您的預約資訊:</p>
     </div>
   </div>
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center mb-4">
     <div class="col-md-8 col-lg-6">
-      <p>
-        <a class="btn btn-secondary text-white d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          預約資訊
-          <i class="fas fa-angle-down"></i>
-        </a>
-      </p>
-      <div class="collapse border-light mb-4" id="collapseExample">
-        <div class="card card-body">
-            <p class="text-secondary">您預約的是 <strong class="text-light">首次體驗課程-基礎</strong>  </p>
-            <p class="text-secondary">上課預約報到日：2021/07/21</p>
-            <p class="text-secondary">預約人：Joanne Chen</p>
-            <p class="text-secondary">年齡：18 歲</p>
-            <p class="text-secondary">性別：女</p>
-            <p class="text-secondary">電子信箱：example123@gmail.com</p>
-            <p class="text-secondary">手機號碼：0912-345-678</p>
+      <div class="accordion " id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header border border-light" id="headingOne">
+            <button class="accordion-button bg-secondary text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              預約資訊
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show border border-light" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-secondary">您預約的是 <strong class="text-light">首次體驗課程-基礎</strong>  </p>
+              <p class="text-secondary">上課預約報到日：2021/07/21</p>
+              <p class="text-secondary">預約人：Joanne Chen</p>
+              <p class="text-secondary">年齡：18 歲</p>
+              <p class="text-secondary">性別：女</p>
+              <p class="text-secondary">電子信箱：example123@gmail.com</p>
+              <p class="text-secondary">手機號碼：0912-345-678</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="row justify-content-md-center">
     <div class="col-md-6 col-lg-4">
-      <h6 class="text-center text-secondary mb-4">上課注意事項</h6>
-      <p class="text-secondary mb-3">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+      <h6 class="text-center text-secondary mb-2">上課注意事項</h6>
+      <p class="text-secondary mb-5">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
       <a href="index.html" class="btn btn-light text-white w-100">返回首頁</a>
     </div>
   </div>
-
 </div>
 
 
 
     <footer class="footer bg-secondary">
 
-<div class="container">
-  <div class="row  flex-column flex-lg-row justify-content-lg-between py-4">
-    <div class="col-md-6 col-lg-4">
-        <h3  class="text-white">現在訂閱，獲得課程優惠碼！</h3>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="input-group  text-secondary mb-3">
-        <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
-        <button type="button" class="btn btn-light text-white">訂閱</button>
+    <div class="container">
+      <div class="row  flex-column flex-lg-row justify-content-lg-between py-4">
+        <div class="col-md-7 col-lg-5">
+            <h3  class="text-white">現在訂閱，獲得課程優惠碼！</h3>
+        </div>
+        <div class="col-md-7 col-lg-5">
+          <div class="input-group  text-secondary mb-3">
+            <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
+            <button type="button" class="btn btn-light text-white">訂閱</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
       <div class="border border-top"></div>
 
       <div class="container pt-4 pb-5 pt-md-5">
@@ -142,13 +151,13 @@
         </div>
       </div>
     </footer>
+
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

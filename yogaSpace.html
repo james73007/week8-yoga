@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>瑜珈空間頁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
-
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0  z-index-999">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-sticky top-0 w-100 py-4 z-index-999">
       <div class="container">
         <a class="logo d-block text-secondary" href="index.html"></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex  justify-content-md-center  flex-grow-1 ">
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark text-sm-center  text-md-center me-lg-5 "  href="course.html">課程介紹</a>
+            <ul class="navbar-nav d-flex justify-content-md-center flex-grow-1 ">
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark  me-lg-5"  href="course.html">課程介紹</a>
               </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark  text-sm-center  text-md-center me-lg-5" href="yogaSpace.html">瑜珈空間</a>
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark   me-lg-5" href="yogaSpace.html">瑜珈空間</a>
               </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-dark  text-sm-center  text-md-center" href="courseSchedule.html">當月課表</a>
+              <li class="nav-item text-center">
+                <a class="nav-link text-dark  " href="courseSchedule.html">當月課表</a>
               </li>
             </ul>
           <ul class=" d-flex  flex-md-row justify-content-center">
@@ -45,208 +47,199 @@
 
 <!-- 固定在右側社群連結 -->
       <ul class=" position-fixed  z-index top-50 end-0 me-3 d-lg-block  d-none d-md-none" >
-        <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
+        <li class="mb-2"><a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left" class="text-secondary"><i class="fab fa-facebook  fa-3x "></i></a></li>
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-instagram  fa-3x"></i></a></li>
         <li class="mb-2"><a href="#" class="text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
-    
-<section>
-    <div class="container py-5">
-        <h1 class="text-center text-secondary mb-4 mb-md-5">瑜伽空間</h1>
-        <div class="row ">
-            <div class="col-md-8 mb-5 mb-md-0">
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <div class="card rounded-pill" >
-                            <img src="./assets/images/blue swimming pool near green potted plant.jpg" class="card-img-top " alt="...">
-                            <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
-                                <h2 class="card-title">A、B 團體課教室</h2>
-                                <p class="card-text">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+    <main>
+    <section>
+        <div class="container py-9">
+            <h1 class="text-center text-secondary mb-4 mb-md-5">瑜伽空間</h1>
+            <div class="row ">
+                <div class="col-md-8 mb-5 mb-md-0">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="card border-0 ">
+                                <img src="./assets/images/blue swimming pool near green potted plant.jpg" class="card-img-top rounded-pill" alt="...">
+                                <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
+                                    <h5 class="card-title fw-medium fs-3 fs-md-4 fs-lg-3">A、B 團體課教室</h5>
+                                    <p class="card-text">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="card border-0 rounded-pill  w-auto" >
+                                <div class="rounded-pill ratio ratio-1x1">
+                                    <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" class="card-img-top object-fit rounded-pill" alt="...">
+                                </div>
+                                <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
+                                    <h5 class="card-title fs-3 fs-md-4 fs-lg-3">C、D 個人訓練室</h5>
+                                    <p class="card-text">開放時間：每週一至週五 09:00~17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-pill ratio ratio-1x1 w-auto" >
+                                <img src="./assets/images/white ceramic sink near white ceramic sink.jpg" class="card-img-top object-fit rounded-pill" alt="...">
+                                <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
+                                    <h5 class="card-title fs-3 fs-md-4 fs-lg-3">淋浴間</h5>
+                                    <p class="card-text">開放時間：每週一至週日 09:00~21:30</p>
+                                </div>             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="card border-0 rounded-pill  ratio ratio-1x1 w-auto" >
+                                <img src="./assets/images/woman in black sports bra and blue denim jeans doing yoga.jpg" class="card-img-top object-fit rounded-pill" alt="...">
+                                <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
+                                    <h5 class="card-title fs-3 fs-md-4 fs-lg-3">器材出租</h5>
+                                    <p class="card-text">有租借需求請至櫃檯登記</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0  ratio ratio-1x1 w-auto rounded-pill bg-primary">
+                                <img src="./assets/images/sittin people beside table inside room.jpg" class="card-img-top object-fit rounded-pill" alt="...">
+                                <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white rounded-pill">
+                                    <h5 class="card-title fs-3 fs-md-4 fs-lg-3">交誼廳   </h5>
+                                    <p class="card-text">開放時間：每週一至週五 09:00~21:30</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row ">
-                    <div class="col-md-6 mb-3">
-                        <div class="card ratio ratio-1x1 w-auto" style="width: 18rem;">
-                            <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" class="card-img-top  rounded-pill" alt="...">
-                            <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
-                                <h2 class="card-title">C、D 個人訓練室</h2>
-                                <p class="card-text">開放時間：每週一至週五 09:00~17:00</p>
-                            </div>
-                        </div>
+                <div class="col-md-4 ">
+                    <div class="px-4 py-4 bg-primary text-secondary rounded-pill">
+                        <h3 class="mb-3">DOYOGA 提供：</h3>
+                        <ul>
+                            <li class="mb-1">
+                                <p>四間教室：A、B 團體課教室、C、D 個人訓練室。</p>
+                            </li>
+                            <li class="mb-1">
+                                <p>瑜珈墊、輔具：每次課後會進行殺菌清潔，乾淨免擔心。</p>
+                            </li>
+                            <li class="mb-1">
+                                <p>男女置物櫃、淋浴間：分別設置在館內 A、B 區。</p>
+                            </li>
+                            <li class="mb-2">
+                                <p>舒適交誼廳，咖啡茶水無限供應，假日提供午間蔬食餐點。</p>
+                            </li>
+                            <li>
+                                <p><a href="reserve.html" class="text-light">立即預約 <i class="fas fa-arrow-right "></i></a></p>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card ratio ratio-1x1 w-auto" style="width: 18rem;">
-                            <img src="./assets/images/white ceramic sink near white ceramic sink.jpg" class="card-img-top rounded-pill" alt="...">
-                            <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
-                                <h2 class="card-title">淋浴間</h2>
-                                <p class="card-text">開放時間：每週一至週日 09:00~21:30</p>
-                            </div>             
-                        </div>
-                    </div>
-                </div>
-                <div class="row"> 
-                    <div class="col-md-6 mb-3">
-                        <div class="card  ratio ratio-1x1 w-auto" style="width: 18rem;">
-                            <img src="./assets/images/woman in black sports bra and blue denim jeans doing yoga.jpg" class="card-img-top rounded-pill" alt="...">
-                            <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
-                                <h2 class="card-title">器材出租</h2>
-                                <p class="card-text">有租借需求請至櫃檯登記</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card ratio ratio-1x1 w-auto" style="width: 18rem;">
-                            <img src="./assets/images/sittin people beside table inside room.jpg" class="card-img-top rounded-pill" alt="...">
-                            <div class="card-body card-img-overlay d-flex flex-column justify-content-end text-white">
-                                <h2 class="card-title">交誼廳   </h2>
-                                <p class="card-text">開放時間：每週一至週五 09:00~21:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 bg-primary ">
-                <div class=" px-5 py-5 ">
-                    <h3 class="text-secondary mb-3">DOYOGA 提供：</h3>
-                    <ul class="text-secondary">
-                        <li>
-                            <p>四間教室：A、B 團體課教室、C、D 個人訓練室。</p>
-                        </li>
-                        <li>
-                            <p>瑜珈墊、輔具：每次課後會進行殺菌清潔，乾淨免擔心。</p>
-                        </li>
-                        <li>
-                            <p>男女置物櫃、淋浴間：分別設置在館內 A、B 區。</p>
-                        </li>
-                        <li>
-                            <p>舒適交誼廳，咖啡茶水無限供應，假日提供午間蔬食餐點。</p>
-                        </li>
-                    </ul>
-                    <a class="text-secondary" href="reserve.html">立即預約 <i class="fas fa-arrow-right "></i></a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- 課程推薦 -->
-<section class="courseReccomend bg-primary py-5">
-    <h2 class="text-center text-secondary mb-3">課程推薦</h2>
-    <div class="container">
-
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
-            </div>
-          </div>
-        <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card border-0 bg-primary   rounded-pill" >
-                        <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">基礎 Basic</h5>
-                            <p class="card-text text-start ">授課老師：Carol Tang</p>
+    </section>
+    
+    <!-- 課程推薦 swiper-->
+    <section class="courseReccomend bg-primary pt-6 pb-8">
+        <div class="container">
+            <h2 class="text-center text-secondary mb-3">課程推薦</h2>
+            <div class="swiper js-course-swiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0 bg-primary  rounded-pill cursor-pointer" >
+                            <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">基礎 Basic</h5>
+                                <p class="card-text text-start ">授課老師：Carol Tang</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill" >
-                        <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top courseRecomImg courseRecomImg-width courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">艾揚格 Iyengar</h5>
-                            <p class="card-text text-start">授課老師：Kanae</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary rounded-pill cursor-pointer" >
+                            <img src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg" class="card-img-top courseRecomImg courseRecomImg-width courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">艾揚格 Iyengar</h5>
+                                <p class="card-text text-start">授課老師：Kanae</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill " >
-                        <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">哈達 Hatha</h5>
-                            <p class="card-text text-start">授課老師：Kuzuha</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary rounded-pill  cursor-pointer" >
+                            <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">哈達 Hatha</h5>
+                                <p class="card-text text-start">授課老師：Kuzuha</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill ">
-                        <img src="./assets/images/two woman dong fitness exercise.jpg" class="card-img-top courseRecomImg courseRecomImg-width " alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">寰宇 Universal</h5>
-                            <p class="card-text text-start">授課老師：Kuzuha</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary   ">
+                            <div class="rounded-pill">
+                                <img src="./assets/images/two woman dong fitness exercise.jpg" class="card-img-top courseRecomImg courseRecomImg-width  rounded-pill" alt="...">
+                            </div>
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">寰宇 Universal</h5>
+                                <p class="card-text text-start">授課老師：Kuzuha</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill ">
-                        <img src="./assets/images/woman doing yoga.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">艾揚格 Iyengar</h5>
-                            <p class="card-text text-start">授課老師：Kanae</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary rounded-pill  ">
+                            <img src="./assets/images/woman doing yoga.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">艾揚格 Iyengar</h5>
+                                <p class="card-text text-start">授課老師：Kanae</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill " >
-                        <img src="./assets/images/woman in white tank top and white pants bending her body by the window.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">基礎 Basic</h5>
-                            <p class="card-text text-start">授課老師：Carol Tang</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary rounded-pill  " >
+                            <img src="./assets/images/woman in white tank top and white pants bending her body by the window.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0">
+                                <h5 class="card-title text-start">基礎 Basic</h5>
+                                <p class="card-text text-start">授課老師：Carol Tang</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0  bg-primary rounded-pill " >
-                        <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0 ">
-                            <h5 class="card-title text-start">基礎 Basic</h5>
-                            <p class="card-text text-start ">授課老師：Carol Tang</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0  bg-primary rounded-pill  " >
+                            <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0 ">
+                                <h5 class="card-title text-start">基礎 Basic</h5>
+                                <p class="card-text text-start ">授課老師：Carol Tang</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card border-0 bg-primary rounded-pill" >
-                        <img  src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg" class="card-img-top courseRecomImg courseRecomImg-width" alt="...">
-                        <div class="card-body text-secondary px-0 py-0">
-                            <h5 class="card-title text-start">艾揚格 Iyengar</h5>
-                            <p class="card-text text-start">授課老師：Kanae</p>
+                    <div class="swiper-slide bg-transparent">
+                        <div class="card border-0 bg-primary  rounded-pill " >
+                            <img  src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg" class="card-img-top courseRecomImg courseRecomImg-width rounded-pill" alt="...">
+                            <div class="card-body text-secondary px-0 py-0  bg-primary">
+                                <h5 class="card-title text-start">艾揚格 Iyengar</h5>
+                                <p class="card-text text-start">授課老師：Kanae</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-    </div>
-</section>
-
+        </div>
+    </section>
+</main>    
 
 
 
     <footer class="footer bg-secondary">
 
-<div class="container">
-  <div class="row  flex-column flex-lg-row justify-content-lg-between py-4">
-    <div class="col-md-6 col-lg-4">
-        <h3  class="text-white">現在訂閱，獲得課程優惠碼！</h3>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="input-group  text-secondary mb-3">
-        <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
-        <button type="button" class="btn btn-light text-white">訂閱</button>
+    <div class="container">
+      <div class="row  flex-column flex-lg-row justify-content-lg-between py-4">
+        <div class="col-md-7 col-lg-5">
+            <h3  class="text-white">現在訂閱，獲得課程優惠碼！</h3>
+        </div>
+        <div class="col-md-7 col-lg-5">
+          <div class="input-group  text-secondary mb-3">
+            <input type="email" class="form-control text-secondary" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="basic-addon2">
+            <button type="button" class="btn btn-light text-white">訂閱</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
       <div class="border border-top"></div>
 
       <div class="container pt-4 pb-5 pt-md-5">
@@ -276,13 +269,13 @@
         </div>
       </div>
     </footer>
+
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
