@@ -1,28 +1,13 @@
-$utilities: map-merge(
-  $utilities,(
-        "font-size" : map-merge(
-            map-get( $utilities,  "font-size"),
-            (
-                responsive: true,
-            )
-        )
-  )
-
-);
-.bg-attachment-flixed{
-  background-attachment: fixed;
-}
-.w-350{
-  width: 350px;
-}
-.h-628{
-  height: 628px;
-}
-.w-540{
-  width: 540px;
-}
-.w-445{
-  width: 445px;
+.w{
+  &-350{
+    width: 350px;
+  }
+  &-540{
+    width: 540px;
+  }
+  &-445{
+    width: 445px;
+  }
 }
 
 .h-210{
@@ -34,25 +19,33 @@ $utilities: map-merge(
     height: 444px;
   }
 }
+.h{
+  &-243{
+    height: 243px;
+  }
+  &-196{
+     height: 196px;
+  }
+  &-207{
+    height: 207px;
+  }
+  &-341{
+    height: 341px;
+  }
+  &-420{
+    height: 420px;
+  }
+  &-628{
+    height: 628px;
+  }
+  &-md-266{
+    height: 266px;
+  }
+  &-lg-444{
+    height: 444px;
+  }
+}
 
-.h-243{
-  height: 243px;
-}
-.h-196{
-  height: 196px;
-}
-.h-207{
-  height: 207px;
-}
-.h-420{
-  height: 420px;
-}
-.h-md-266{
-  height: 266px;
-}
-.h-lg-444{
-  height: 444px;
-}
 .bg-img{
   background-image: url(../../images/teacher-1.png);
   height: 420px;
@@ -77,15 +70,13 @@ $utilities: map-merge(
 }
 .courseRecomImg-width{
   width: 255px;
-@include media-breakpoint-up(md) { 
-  width: 210px;
+  @include media-breakpoint-up(md) { 
+    width: 210px;
+  }
+  @include media-breakpoint-up(lg) { 
+    width: 255px;
+  }
 }
-@include media-breakpoint-up(lg) { 
-  width: 255px;
-}
-}
-
-
 .searchWidth{
   width: 231px;
   @include media-breakpoint-up(md) { 
@@ -106,16 +97,68 @@ $utilities: map-merge(
 }
 .courseImgHeight{
   height: 218px;
-@include media-breakpoint-up(md) { 
-  height: 341px;
+  @include media-breakpoint-up(md) { 
+    height: 341px;
+  }
 }
-}
-
-
-
 .ms-md-negative-s{
   margin-left: -60px;
 }
 .ms-lg-negative-l{
   margin-left: -95px;
+}
+.start-55{
+  left: 55px;
+}
+.banner{
+  background-image: url(../images/photo-1612157777902-5382bc6e864b.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  bottom;
+  background-attachment: fixed;
+  height: 582px;
+}
+@media(min-width:768px){
+  .banner{
+    height: 582px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .plan-selection{
+    .card{
+      flex-direction: row;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .plan-selection{
+    .card{
+      flex-direction: column;
+      div{
+        width: 100%;
+      }
+    }
+  }
+}
+.logo-img-white{
+  background-image: url(../images/DOYOGA-footer.png);
+  width: 96px;
+  height: 31px;
+  text-indent: 101%;
+  overflow:hidden;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.logo{
+  background-image: url(../images/DOYOGA-logo.png);
+  width: 96px;
+  height: 31px;
+  text-indent: 101%;
+  overflow:hidden;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }

@@ -67,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       #C0A4A5 !default;    //$blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -86,7 +86,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":     #C0A4A5,
-  "dark":       #707070
+  "dark":       #707070,
+  "white":      #fff,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -259,6 +260,9 @@ $spacers: (
   7: $spacer * 3,    //48
   8: $spacer * 3.5,    //56
   9: $spacer * 4,    //64
+  10: $spacer * 4.5, //72
+  11: $spacer * 5, //80
+  12: $spacer * 7.5, //120
 
 
 
@@ -418,6 +422,7 @@ $aspect-ratios: (
   "16x9": calc(9 / 16 * 100%),  //default
   "16x21": calc(21 / 16 * 100%), 
   "21x9": calc(9 / 21 * 100%),  //default
+  "35x22": calc(22 / 35 * 100%),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -444,6 +449,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
@@ -463,12 +469,12 @@ $h6-font-size:                $font-size-base !default;         //16
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size *2,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size,   //40
+  2: $h2-font-size *2,  //32
+  3: $h3-font-size,   //28
+  4: $h4-font-size,   //24
+  5: $h5-font-size,   //20
+  6: $h6-font-size    //16
 ) !default;
 // scss-docs-end font-sizes
 
@@ -708,8 +714,8 @@ $input-bg:                              $white !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                            red !default; //
-$input-border-color:                    $gray-400 !default;
+$input-color:                           $body-color !default; 
+$input-border-color:                    $primary !default; //$gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -723,7 +729,7 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $primary !default; //$gray-600 !default;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;

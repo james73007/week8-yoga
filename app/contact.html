@@ -4,44 +4,46 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<section class="pt-lg-9">
-    <div class="container">
+<section class="pt-7 pb-11 pt-md-9  pt-lg-9 pb-lg-11">
+    <div class="container ">
         <h2 class="text-secondary text-center mb-5">聯絡我們</h2>
         <div class="row ">
-            <div class="col-lg-7">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29462.416080652038!2d120.30023848661958!3d22.62386749533562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6auY6ZuE5biC6IuT6ZuF5Y2A5YyX5L-h6KGXIDIzIOiZnyAyIOaokw!5e0!3m2!1szh-TW!2stw!4v1630398144081!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="col-lg-7 mb-6 mb-lg-0">
+                <div class="mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29462.416080652038!2d120.30023848661958!3d22.62386749533562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6auY6ZuE5biC6IuT6ZuF5Y2A5YyX5L-h6KGXIDIzIOiZnyAyIOaokw!5e0!3m2!1szh-TW!2stw!4v1630398144081!5m2!1szh-TW!2stw" class="rounded-pill w-100" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <h3>DOYOGA 教室位置</h3>
-                <p>高雄市苓雅區北信街 23 號 2 樓</p>
-                <p>如何前往：</p>
-                <ul>
-                    <li>1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
-                    <li>2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+                <h3 class="text-secondary mb-2">DOYOGA 教室位置</h3>
+                <p class="text-secondary mb-2">高雄市苓雅區北信街 23 號 2 樓</p>
+                <p class="text-secondary">如何前往：</p>
+                <ul class="text-secondary">
+                    <li class="mb-4">1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+                    <li class="mb-4">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
                     <li>3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
                 </ul>
             </div>
-            <div class="col-lg-5 bg-primary">
-                <div class="px-5 py-5">
-                    <h2 class="mb-4">意見回饋&問題詢問</h2>
+            <div class="col-lg-5">
+                <div class="px-5 py-5 bg-primary text-secondary  rounded-pill">
+                    <h2 class=" mb-4">意見回饋&問題詢問</h2>
                     <form action="">
-                        <div class="text-secondary ">
-                            <label class="d-block " for="name">姓名</label>
-                            <input type="text" id="name"  class="border border-light w-100" placeholder="請輸入您的姓名">
+                        <div class="mb-3">
+                            <label class="d-block mb-2" for="name">姓名</label>
+                            <input type="text" id="name"  class="form-control border border-light w-100 " placeholder="請輸入您的姓名">
                         </div>
-                        <div class="text-secondary ">
-                            <label class="d-block " for="mail">電子信箱</label>
-                            <input type="text" id="mail"  class="border border-light w-100" placeholder="email@example.com">
+                        <div class="mb-3">
+                            <label class="d-block mb-2" for="mail">電子信箱</label>
+                            <input type="text" id="mail"  class="form-control border border-light w-100 " placeholder="email@example.com">
                         </div>
-                        <div class="text-secondary ">
-                            <label class="d-block " for="phone">手機號碼</label>
-                            <input type="tel"   id="phone" class="border border-light w-100" placeholder="0912-345-678">
+                        <div class="mb-3">
+                            <label class="d-block mb-2" for="phone">手機號碼</label>
+                            <input type="tel"   id="phone" class="form-control border border-light w-100 " placeholder="0912-345-678">
                         </div>
-                        <div class="text-secondary ">
-                            <label class="d-block " for="response">意見回饋</label>
-                            <textarea name="" id="response" cols="30" rows="10" class="border border-light w-100"></textarea>
+                        <div class="mb-4">
+                            <label class="d-block mb-2" for="response">意見回饋</label>
+                            <textarea name="" id="response" cols="30" rows="10" class="form-control border border-light w-100"></textarea>
                         </div>
-                        <input type="submit" value="送出">
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-light text-white ">送出</button>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -4,48 +4,51 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-
 <section>
     <div class="container py-4">
         <h3 class="text-secondary text-center mb-3">立即預約</h3>
-        <div class=" d-flex justify-content-center  mb-4">
-            <a class="rounded-pill btn btn-secondary text-white ">選擇方案</a> 
-            <a href="reserve-fillData.html" class="rounded-pill btn btn-primary  text-secondary">填寫資料</a>   
-            <a href="finish-reserve.html" class="rounded-pill btn btn-primary text-secondary ">完成預約</a>
-            
+        <div class="row d-flex justify-content-center  mb-4">
+            <div class="col col-md-2">
+                <div class="rounded-pill bg-secondary text-center text-white px-lg-7 py-2">選擇方案</div> 
+            </div>
+            <div class="col col-md-2">
+                <div class="rounded-pill  bg-primary text-center text-secondary px-lg-7 py-2">填寫資料</div>   
+            </div>
+            <div class="col col-md-2">
+                <div  class="rounded-pill  bg-primary text-center text-secondary px-lg-7 py-2">完成預約</div>
+            </div>
         </div>
         <div class="row mb-4">
-            <div class="col-lg-4">
-                <div class="card border-light rounded" >
+            <div class="col-lg-4 mb-3 mb-md-4 mb-lg-0 ">
+                <div class="card flex-md-row flex-lg-column border-light rounded-pill" >
                     <img  src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img-top  h-243 object-fit-cover " alt="首次體驗.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-center text-secondary">首次體驗</h5>
-                        <p class="card-text text-center text-light">NT $450 / 次</p>
-                        <p class=" text-secondary">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                        <a href="#" class="btn  btn-secondary text-white stretched-link w-100">選擇課程</a>
+                        <h5 class="card-title text-center text-secondary mb-1">首次體驗</h5>
+                        <p class="card-text text-center text-light mb-2">NT $450 / 次</p>
+                        <p class=" text-secondary mb-6 mb-md-4 mb-lg-6">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                        <button type="button" class="btn btn-light stretched-link w-100 btnHoverSecondary text-white">選擇課程</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card border-light" >
+            <div class="col-lg-4 mb-3 mb-md-4 mb-lg-0">
+                <div class="card flex-md-row flex-lg-column border-light" >
                     <img  src="./assets/images/woman performing yoga.jpg" class="card-img-top  h-243 object-fit-cover " alt="短期體驗.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-center text-secondary">短期體驗</h5>
-                        <p class="card-text text-center text-light"> NT $1800 / 月</p>
-                        <p class=" text-secondary">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
-                        <a href="#" class="btn  btn-secondary text-white stretched-link w-100">選擇課程</a>
+                        <h5 class="card-title text-center text-secondary mb-1">短期體驗</h5>
+                        <p class="card-text text-center text-light mb-2"> NT $1800 / 月</p>
+                        <p class=" text-secondary mb-6 mb-md-4 mb-lg-6">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                        <button type="button" class="btn btn-light stretched-link w-100 btnHoverSecondary text-white">選擇課程</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div  class="card border-light" >
+                <div  class="card flex-md-row flex-lg-column border-light" >
                     <img src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg" class="card-img-top  h-243 object-fit-cover " alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center text-secondary">長期體驗</h5>
-                        <p class="card-text text-center text-light">NT $5600 / 季</p>
-                        <p class=" text-secondary">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
-                        <a href="#" class="btn btn-secondary text-white stretched-link  w-100">選擇課程</a>
+                        <h5 class="card-title text-center text-secondary mb-1">長期體驗</h5>
+                        <p class="card-text text-center text-light mb-2">NT $5600 / 季</p>
+                        <p class=" text-secondary mb-6 mb-md-4 mb-lg-6">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                        <button type="button" class="btn btn-light stretched-link w-100 btnHoverSecondary text-white">選擇課程</button>
                     </div>
                 </div>
             </div>
@@ -53,22 +56,22 @@ current: index
         <div class="row">
             <div class="w-445 mx-auto">
                 <h4 class=" text-secondary text-center mb-3">預約須知</h4>
-                <ul class="text-secondary">
-                    <li>
+                <ul class="text-secondary mb-5">
+                    <li class="mb-1">
                         <p>1. 如果有特殊體質、特殊狀況，請主動告知。</p>
                     </li>
-                    <li>
+                    <li class="mb-1">
                         <p>2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</p>
                     </li>
-                    <li>
+                    <li class="mb-1">
                         <p>3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</p>
                     </li>
                     <li>
                         <p>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</p>
                     </li>
                 </ul>
+                <a href="reserve-fillData.html" class="btn btn-light text-white w-100 btnHoverSecondary">繼續預約</a>
             </div>
         </div>
-      
     </div>
 </section>
